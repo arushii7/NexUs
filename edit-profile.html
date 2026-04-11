@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexUs — Edit Profile</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-wrapper">
+  <nav class="navbar">
+    <a href="home.html" class="navbar-brand">
+      <span class="brand-name">NexUs</span>
+      <span class="brand-tagline">for students, by students</span>
+    </a>
+    <div class="navbar-actions">
+      <a href="search.html" class="nav-icon-btn">🔍</a>
+      <button class="nav-icon-btn" onclick="window.location='notifications.html'">🔔<span class="notif-badge"></span></button>
+      <a href="profile.html" class="nav-avatar">A</a>
+    </div>
+  </nav>
+  <div class="context-bar"><strong>Bennett University</strong> · Student &nbsp;|&nbsp; Edit Profile</div>
+
+  <div class="main-layout">
+    <div class="feed-col">
+      <div class="content-box fade-in" style="max-width:560px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;">
+          <div class="profile-avatar-lg" style="margin-bottom:0;">A</div>
+          <div>
+            <div style="font-weight:600;font-size:15px;">Arushi Singh</div>
+            <button class="btn btn-secondary btn-sm" style="margin-top:6px;" onclick="showToast('Upload coming soon!')">Change Photo</button>
+          </div>
+        </div>
+
+        <form id="edit-profile-form">
+          <div class="form-group">
+            <label class="form-label">Display Name</label>
+            <input id="displayName" type="text" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">About You</label>
+            <textarea id="about" class="form-textarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+  <label class="form-label">Year</label>
+  <select id="year" class="form-select">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+</div>
+          <div class="form-group">
+            <label class="form-label">Course</label>
+            <input id="course" type="text" class="form-input" value="B.Tech CSE">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input id="email" type="email" class="form-input" disabled style="opacity:0.6;">
+            <div style="font-size:11px;color:var(--gray-400);margin-top:4px;">Email cannot be changed</div>
+          </div>
+
+          <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:8px;">
+            <a href="profile.html" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">Account</div>
+        <a href="profile.html" class="quick-action-btn"><span class="qa-icon">👤</span> View Profile</a>
+        <a href="settings.html" class="quick-action-btn"><span class="qa-icon">⚙️</span> Settings</a>
+        <a href="login.html" class="quick-action-btn" style="color:#991b1b;"><span class="qa-icon">🚪</span> Log Out</a>
+      </div>
+    </aside>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
