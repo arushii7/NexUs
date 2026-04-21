@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--utf-8, beings chars like emojis;  viewport is for diff screens orientation-->
+<title>NexUs — New Post</title> <!-- page title -->
+<link rel="stylesheet" href="styles.css"> <!--linking css file-->
+</head>
+<body>
+<div class="app-wrapper"> <!-- main wrapper for the app -->
+  <nav class="navbar"> <!-- navigation bar -->
+    <a href="home.html" class="navbar-brand"> <!-- brand link to home page -->
+      <span class="brand-name">NexUs</span> <!-- brand name -->
+      <span class="brand-tagline">for students, by students</span> <!-- brand tagline -->
+    </a>
+    <div class="navbar-actions"> <!-- container for navbar actions -->
+      <a href="profile.html" class="nav-avatar">A</a> <!-- profile avatar linking to profile page -->
+    </div>
+  </nav>
+  <div class="context-bar"><strong>Bennett University</strong> · Student &nbsp;|&nbsp; New Post</div> <!-- context bar showing current university and page context -->
+
+  <div class="main-layout"> <!-- main layout container -->
+    <div class="feed-col"> <!-- main content column -->
+      <div class="content-box fade-in">
+        <h1 style="font-family:var(--font-display);font-size:28px;font-weight:700;margin-bottom:20px;">What's on your mind?</h1> <!-- page heading -->
+        <form id="create-post-form">  <!-- form for creating a new post -->
+          <div class="form-group"> <!-- form group for title input -->
+            <label class="form-label">Title</label> <!-- label for title input -->
+            <input type="text" class="form-input" placeholder="Give your post a title..." required> <!-- title input field -->
+          </div>
+
+          <div class="form-group"> <!-- form group for tag selection -->
+            <label class="form-label">Tag</label> <!-- label for tag selection -->
+            <div class="tags-group"> <!-- container for tag radio buttons -->
+              <label class="tag-check-label"><input type="radio" name="tag" value="academics" checked> Academics</label> <!-- radio button for Academics tag -->
+              <label class="tag-check-label"><input type="radio" name="tag" value="resources"> Resources</label> <!-- radio button for Resources tag -->
+              <label class="tag-check-label"><input type="radio" name="tag" value="rants"> Rants</label> <!-- radio button for Rants tag -->
+            </div>
+          </div>
+
+          <div class="form-group"> <!-- form group for content textarea -->
+            <label class="form-label">Content</label> <!-- label for content textarea -->
+            <textarea class="form-textarea editor-textarea" placeholder="Write your post here..." rows="8" required></textarea>   <!-- textarea for post content -->
+          </div>
+
+          <div style="display:flex;gap:10px;justify-content:flex-end;"> <!-- container for form action buttons -->
+            <a href="home.html" class="btn btn-secondary">Cancel</a> <!-- cancel button linking back to home page -->
+            <button type="submit" class="btn btn-primary">Publish Post</button> <!-- submit button to publish the post -->
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="sidebar"> <!-- sidebar for quick actions -->
+      <div class="sidebar-card">  
+        <div class="sidebar-title">Quick Actions</div> <!-- sidebar title -->
+        <a href="create-post.html" class="quick-action-btn primary">
+          <span class="qa-icon">✚</span> New Post 
+        </a> <!-- quick action button for creating a new post -->
+        <a href="upload-resource.html" class="quick-action-btn primary">
+          <span class="qa-icon">📎</span> Upload Resource
+        </a>
+      </div>
+    </aside>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>

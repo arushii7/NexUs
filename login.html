@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--utf-8, beings chars like emojis;  viewport is for diff screens orientation-->
+<title>NexUs</title>
+<link rel="stylesheet" href="styles.css"> <!--linking css file-->
+</head>
+<body>
+<div class="login-page"> <!-- wrapper for login page -->
+  <div class="login-card fade-in"> <!-- card for login form, fade-in class for animation -->
+    <div class="login-brand">NexUs</div> <!-- brand name -->
+    <div class="login-tagline">for students, by students</div> <!-- tagline -->
+    <form id="login-form" class="login-fields"> <!-- login form -->
+      <div class="form-group"> <!-- form group for university selection -->
+        <label class="form-label">University</label> <!-- label for select input -->
+        <select class="form-select"> <!-- dropdown for university selection -->
+          <option value="">Select your University!</option> <!-- default option -->
+          <option value="bennett">Bennett University</option> <!-- option for Bennett University -->
+        </select>
+      </div>
+      <div class="form-group"> <!-- form group for email input -->
+        <label class="form-label">University Email</label> <!-- label for email input -->
+        <input type="email" id="email" class="form-input" placeholder="email@bennett.edu.in" required> <!-- email input field -->
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Continue</button> <!-- submit button -->
+    </form>
+  </div>
+</div>
+<script type="module" src="main.js"></script> <!-- linking main.js for login functionality -->
+</body>
+</html>

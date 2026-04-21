@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-wrapper">
+  <!-- navbar -->
+  <nav class="navbar">
+    <a href="home.html" class="navbar-brand">
+      <span class="brand-name">NexUs</span>
+      <span class="brand-tagline">for students, by students</span>
+    </a>
+    <div class="navbar-actions">
+      <a href="profile.html" class="nav-avatar" title="Profile">A</a>
+    </div>
+  </nav>
+
+  <!-- context bar -->
+  <div class="context-bar">
+    <strong>Bennett University</strong> · Student &nbsp;|&nbsp; You're viewing campus-wide posts
+  </div>
+
+  <!-- main -->
+  <div class="main-layout">
+    <!-- feed -->
+    <div class="feed-col">
+      <div class="tab-bar">
+  <a class="tab-btn" href="home.html">All</a>
+  <a class="tab-btn" href="home.html?tag=academics">Academics</a> <!-- tab button for academics -->
+  <a class="tab-btn" href="home.html?tag=resources">Resources</a> <!-- tab button for resources -->
+  <a class="tab-btn" href="home.html?tag=rants">Rants</a> <!-- tab button for rants -->
+</div>
+      <div id="posts"></div> <!-- container where posts will be rendered by JavaScript -->
+    </div>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-title">Quick Actions</div> <!-- title for quick actions section -->
+        <a href="create-post.html" class="quick-action-btn primary"> 
+          <span class="qa-icon">✚</span> New Post
+        </a>
+        <a href="upload-resource.html" class="quick-action-btn primary">
+  <span class="qa-icon">📎</span> Upload Resource
+</a>
+      </div>
+    </aside>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
